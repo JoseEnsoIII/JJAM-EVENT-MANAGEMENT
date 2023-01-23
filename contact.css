@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #191970;
+  height: 60px;
+  z-index: 1;
+}
+.window-scroll {
+background: var(#191970);
+box-shadow: 0 1rem 2rem rgba(92, 70, 219, 0.2);
+
+}
+.nav-links {
+flex: 1;
+text-align: right;
+left: 10%;
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 15px;
+position: relative;
+}
+.nav-links ul li a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 15px;
+}
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #ffffff;
+display: block;
+margin: auto;
+transition: 0.5;
+
+}    
+.nav-links ul li:hover::after{
+width: 100%;
+}
+#logo {
+color: #fff;
+font-size: 35px;
+width: 40px;
+height: 40px;
+float: right;
+margin: 40px;
+cursor: pointer;
+text-decoration: none;
+font-family: 'Helvetica', sans-serif;
+color: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+body{
+  background: #ffffff;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #a5a5ff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #023086;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #191970;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

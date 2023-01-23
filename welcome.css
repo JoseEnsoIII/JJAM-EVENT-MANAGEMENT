@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif,sans-serif;
+}
+body{
+  background: #ffffff;
+}
+body h1{
+  position: absolute;
+  left: 600px;
+  bottom: 550px;
+  color: rgb(0, 0, 0);
+}
+body p{
+  position: absolute;
+  left: 570px;
+  bottom: 530px;
+  color: rgb(0, 0, 0);
+}
+nav{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #7c7b7b;
+  width: 81px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px  rgba(0, 0, 0, 0.1);
+}
+.logo{
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #191970;
+}
+a{
+  position: relative;
+  color: #191970;
+  font-size: 15px;
+  display: table;
+  width: 300px;
+  padding: 15px;
+  
+}
+.fa-sharp{
+  position: relative;
+  width: 70px;
+  height: 20px;
+  top: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+.nav-items{
+  position: relative;
+  top: 12px;
+  top: -1px;
+  color: #fff;
+}
+
+.nav-items:hover{
+  color: #fff;
+}
+.logo span:hover{
+  color: #fff;
+  transition-duration: 5s;
+}
+a:hover{
+  background: #191970;
+  color: #fff;
+}
+
+.fa-sharp:hover{
+  color: #fff;
+  
+}
+nav:hover{
+  width: 280px;
+  transition: all 0.5s ease;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #191970;
+  height: 60px;
+  z-index: 1;
+}
+.window-scroll {
+  background: var(#191970);
+  box-shadow: 0 1rem 2rem rgba(92, 70, 219, 0.2);
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+  left: 10%;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.5;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+h1.logo-text {
+  color: #fff;
+  font-size: 35px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  color: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+.image {
+  background-image: url("img/bg.webp");
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+}
+.image h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+  font: bolder;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image p {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image .button {
+  font-size: 18px;
+  background-color: #191970;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 0 15px;
+  background: #191970;
+  color: #ffffff;
+  box-shadow: 8px 8px 16px #7e7777, -8px -8px 16px #cabebe;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #191970;
+  cursor: pointer;
+  transform: scale(1);
+}
+#social-media-widget {
+  background-color: transparent;
+  padding: 20px;
+}
+
+#social-media-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#social-media-widget li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#social-media-widget a {
+  display: block;
+  text-decoration: none;
+}
+
+#social-media-widget img {
+  width: 40px;
+  height: 40px;
+}
+#social-media-widget li a:hover {
+  transform: scale(1.2);
+}
+/*Section*/
+section {
+  background-size: cover;
+  width: 100%;
+  background-color: #ffffff;
+  height: 600px;
+  flex-wrap: wrap;
+}
+.services {
+  background-color: #ffffff;
+  height: 600px;
+}
+.services h1 {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  height: 75px;
+  color: #ffffff;
+  background-color: #3a3aec;
+  width: 400px;
+  border-radius: 0 20px;
+  position: relative;
+  left: 37%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #a5a5ff;
+  width: 200px;
+  height: 370px;
+  margin: 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+.card-image {
+  background-color: #21d4fd;
+  height: 150px;
+  margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.event-1 {
+  background-image: url(img/bday.webp);
+}
+.event-2 {
+  background-image: url(img/wedding.jpeg);
+}
+.event-3 {
+  background-image: url(img/party.jpeg);
+}
+.event-4 {
+  background-image: url(img/corporate.jpeg);
+}
+.event-5 {
+  background-image: url(img/fiesta.jpeg);
+}
+.card h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.card p {
+  text-align: center;
+  color: #000000;
+}
+.card a {
+  color: #ffffff;
+  background-color: #191970;
+  padding: 3px 15px;
+  display: block;
+  height: 30px;
+  margin: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  overflow: ellipsis;
+}
+
+.card:hover {
+  background-color: #777777;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.card p:hover {
+  background-color: #777777;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1);
+}
+.card a:hover {
+  background-color: #ffffff;
+  color: #191970;
+  cursor: pointer;
+  transform: scale(1);
+  border: 1px solid #191970;
+}
+.see a {
+  color: #ffffff;
+  background-color: #d44545;
+  padding: 10px 13px;
+  display: block;
+  height: 40px;
+  width: 300px;
+  position: absolute;
+  left: 36%;
+  margin: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px 5px 5px 5px;
+}
+.see a:hover {
+  background-color: #ffffff;
+  color: #191970;
+  cursor: pointer;
+  transform: scale(1);
+  border: 1px solid #000000;
+}
+section {
+  background-size: cover;
+  width: 100%;
+  background-color: #ffffff;
+  height: 500px;
+  flex-wrap: wrap;
+}
+section h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+section h2 {
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: solid;
+}
+
+.title h2 {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  background-color: #3a3aec;
+  height: 60px;
+  width: 250px; 
+  justify-content: center;
+  position: relative;
+  left: 40%;
+  border-radius: 5px 0 0 5px;
+  text-transform: uppercase;
+  box-sizing: border-box; 
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.YT{
+  width: 550px;
+  height: 400px;
+  background-color: #a5a5ff;
+  justify-content: center;
+  position: absolute;
+  left: 30%;
+  border-radius: 15px 15px 15px 15px;
+  border: 1px solid #191970;
+  display: flex;
+  flex-wrap: wrap;
+}
+.YT iframe{
+  margin-top: 0px;
+  position: absolute;
+  right: 5%;
+  margin-top: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+.YT p{
+  margin-top: 280px;
+  text-align: center;
+}
+.footer {
+  background-color: #000000;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 500px;
+}
+.foots {
+  margin: 20px;
+  
+}
+.foots h2 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.foots a {
+  color: rgb(255, 123, 0);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: block;
+  margin: 10px;
+}
+#scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #191970;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  border: 1px solid #fff;
+}
+.foots a:hover {
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.Creator h3{
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(path/to/image.jpg);
+    background-size: 300px 200px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  body {
+    background-color: #ffffff;
+  }
+  .image {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .image h1 {
+    font-size: 25px;
+  }
+  .image p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #social-media-widget {
+    background-color: transparent;
+    padding: 10px;
+  }
+  #social-media-widget li a:hover {
+    transform: scale(1.2);
+  }
+  section {
+    background-color: #ffffff;
+    height: 1500px;
+  }
+
+  .services h1 {
+    text-align: center;
+    left: 20%;
+  }
+  .card {
+    width: 150px;
+    height: 430px;
+    margin: 10px;
+    margin-top: 8px;
+  }
+  .card a {
+    height: 40px;
+    margin: 30px 30px;
+    margin-top: 15px;
+  }
+  .see a {
+    text-align: center;
+    margin-bottom: 100px;
+    left: 23%;
+  }
+  .title {
+    height: 30px;
+    text-align: center;
+    left: 35%;
+  }
+  .title h2 {
+    font-size: 40px;
+    height: 50px;
+    margin-top: 80%;
+    text-align: center;
+    left: 32%;
+    margin-bottom: 20px;
+  }
+  .YT{
+    left: 10%;
+  }
+  .footer {
+    height: 100px;
+    font-size: 10px;
+  }
+  .foots h2 {
+    font-size: 12px;
+  }
+  .foots a {
+    font-size: 10px;
+  }
+  #scroll-button {
+    font-size: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    right: 5px;
+    border: 1px solid #fff;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    background-color: #ffffff;
+  }
+  .image {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .image h1 {
+    font-size: 25px;
+  }
+  .image p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #social-media-widget {
+    background-color: transparent;
+    padding: 10px;
+  }
+  #social-media-widget li a:hover {
+    transform: scale(1.2);
+  }
+  section {
+    background-color: #ffffff;
+    height: 1500px;
+  }
+
+  .services h1 {
+    text-align: center;
+    left: 20%;
+  }
+  .card {
+    width: 150px;
+    height: 430px;
+    margin: 10px;
+    margin-top: 8px;
+  }
+  .card a {
+    height: 40px;
+    margin: 30px 30px;
+    margin-top: 15px;
+  }
+  .see a {
+    text-align: center;
+    margin-bottom: 100px;
+    left: 23%;
+  }
+  .title {
+    height: 30px;
+    text-align: center;
+    left: 35%;
+  }
+  .title h2 {
+    font-size: 40px;
+    height: 50px;
+    margin-top: 80%;
+    text-align: center;
+    left: 32%;
+    margin-bottom: 20px;
+  }
+  .YT{
+    left: 10%;
+  }
+  .footer {
+    height: 100px;
+    font-size: 10px;
+  }
+  .foots h2 {
+    font-size: 12px;
+  }
+  .foots a {
+    font-size: 10px;
+  }
+  #scroll-button {
+    font-size: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    right: 5px;
+    border: 1px solid #fff;
+  }
+ 
+}
